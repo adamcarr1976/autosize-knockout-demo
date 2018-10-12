@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.6.6/tailwind.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/4.0.2/autosize.js"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="app" class="container py-10 px-10">
+
+        <textarea placeholder="Enter a comment." data-bind="textInput: comment, autosize" class="bg-blue-lighter px-3 py-3 rounded text-grey-darker outline-none resize-none border-grey-darkest"></textarea>
+        <pre data-bind="text: ko.toJSON($data, null, 2)"></pre>
+    </div>
+    <script src="js/app/domReady.js"></script>
+    <script src="js/app/autosize-extender.js"></script>
+    <script src="js/app/Model.js"></script>
+    <script src="js/app/app.js"></script>
+</body>
+
+</html>
